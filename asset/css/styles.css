@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #8684f7;
+  --color-brand2: #06055c;
+  --sidbar-width: 240px;
+  --font-base: "Bai Jamjuree";
+}
+body {
+  background-color: var(--color-base2);
+  color: var(--color-body);
+  font-family: var(--font-base), sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: var(--color-brand);
+}
+img {
+  width: 100%;
+}
+.navbar {
+  background-color: var(--color-base);
+}
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: 180px;
+    background: linear-gradient(rgb(3, 59, 66, 1), rgba(3, 68, 46, 0)),
+      url(../images/background-blured.PNG);
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .navbar .nav-link:hover {
+    color: var(--color-brand);
+  }
+  .bran-logo img {
+    border: 8px var(--color-brand) solid;
+  }
+  /* CONTENT WRAPPER */
+  #content-wrapper {
+    padding-left: var(--sidbar-width);
+  }
+
+  /* .bran-logo {
+    margin-top: 3px;
+    margin-left: 550px;
+    background-size: cover;
+  } */
+}
+
+.left-side-wrapper {
+  width: 100px;
+  height: 100px;
+  align-content: center;
+  background: var(--color-base);
+  transition: width 14s, height 9s;
+}
+.hide-p {
+  font-size: 50px;
+  opacity: 0;
+}
+.left-side-wrapper:hover {
+  width: 900px;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.hide-p:hover {
+  background-color: #033f47;
+  color: var(--color-brand);
+  opacity: 1;
+  background-size: cover;
+}
